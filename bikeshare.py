@@ -114,13 +114,13 @@ def station_stats(df):
     start_time = time.time()
     
     # Display most commonly used start station.
-    pop_ss  = df["Start Station"].mode()[0]
-    print("The most common start station is: " + str(pop_ss))
+    pop_start_station  = df["Start Station"].mode()[0]
+    print("The most common start station is: " + str(pop_start_station))
 
 
     # Display most commonly used end station.
-    pop_es  = df["End Station"].mode()[0]
-    print("The most common end station is: " + str(pop_es))
+    pop_end_station  = df["End Station"].mode()[0]
+    print("The most common end station is: " + str(pop_end_station))
 
 
     # Display most frequent combination of start station and end station trip.
@@ -174,14 +174,14 @@ def user_stats(df):
     
     # Display earliest, most recent, and most common year of birth.
     if "Birth Year" in df.columns:
-        min_by = df["Birth Year"].min()
-        max_by = df["Birth Year"].max()
-        most_by = df["Birth Year"].mode()[0]
+        min_birthyear = df["Birth Year"].min()
+        max_birthyear = df["Birth Year"].max()
+        most_birthyear = df["Birth Year"].mode()[0]
 
         print("\r\nBirth year breakdown is: ")
-        print("\tEarliest birth year: ", int(min_by))
-        print("\tMost recent birth year: ", int(max_by))
-        print("\tMost common birth year: ", int(most_by))
+        print("\tEarliest birth year: ", int(min_birthyear))
+        print("\tMost recent birth year: ", int(max_birthyear))
+        print("\tMost common birth year: ", int(most_birthyear))
     else: 
         print("There is no birth year information")
 
