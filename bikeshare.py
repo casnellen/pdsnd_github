@@ -191,7 +191,8 @@ def user_stats(df):
 
 
 def main():
-    """Gathers user input and calculates different stats based on the data from the filters."""
+    """Gathers user input about the cities and days to look at in the datat set.
+    Then it calculates different stats based on the data from the filters."""
     while True:
         # Get user filters.
         city, month, day = get_filters()
