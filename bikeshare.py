@@ -19,7 +19,7 @@ def get_filters():
     print("Which city would you like to look at?")
     city = str(input()).lower()
     
-    # Test that the user input is in the appropriate responses.
+    # Test that the user input is in the appropriate responses for city.
     while city not in ["chicago", "new york city", "washington"]:
         print("We don't have information on that city. Please choose from the following: Chicago, New York City, Washington")
         city = str(input()).lower()
@@ -28,7 +28,7 @@ def get_filters():
     # Get user input for month (all, january, february, ... , june).
     print("Which month would you like to look at?")
     month = str(input()).lower()
-    # Test that the user input is in the appropriate responses.
+    # Test that the user input is in the appropriate responses for the month.
     while month not in ["all","january","february","march","april","may","june"]:
         print("Invalid month. Please choose a specific month or for all of them choose 'all'")
         month = str(input()).lower()
@@ -37,7 +37,7 @@ def get_filters():
     # Get user input for day of week (all, monday, tuesday, ... sunday).
     print("Which day of the week would you like to look at?")
     day = str(input()).lower()
-    # Test that the user input is in the appropriate responses.
+    # Test that the user input is in the appropriate responses for the day of the week.
     while day not in ["all","monday","tuesday","wednesday","thursday","friday","saturday","sunday"]:
         print("Invalid day. Please choose a specific day of the weel or for all of them choose 'all'")
         day = str(input()).lower()
